@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>CheetahWeb</title>
+<link rel="shortcut icon" href="./images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<script type="text/javascript" src="./js/json2.js"></script>
+<script type="text/javascript" src="./js/Chart.min.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
+
+</head>
+<body onload="initializeCheetahChart();">
+	<div class="cover">
+		<div class="main">
+			<div class="header">
+				<div class="logo">logo</div>
+			</div>
+
+			<div class="tree">menu</div>
+			<div class="chart">
+				<div class="cpu">
+					<canvas id="cpu"></canvas>
+					CPU
+				</div>
+				<div class="memory">
+					<canvas id="memory"></canvas>
+					Memory
+				</div>
+				<div class="disk">
+					<canvas id="disk"></canvas>
+					Disk
+				</div>
+			</div>
+			<div class="footer">
+				<button onclick="stopAllUpdateChart();">Stop update</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
