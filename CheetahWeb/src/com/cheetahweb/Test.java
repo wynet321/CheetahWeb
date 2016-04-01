@@ -26,7 +26,7 @@ public class Test {
 	public String getData() {
 		JSONObject result = new JSONObject();
 		List<Integer> list = new ArrayList<Integer>();
-		Random random=new Random();
+		Random random = new Random();
 		list.add(random.nextInt(101));
 		result.put("data", list);
 		return result.toString();

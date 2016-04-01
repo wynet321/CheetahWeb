@@ -3,6 +3,7 @@ var initializeCheetahChart = function() {
 	generateChart("cpu");
 	generateChart("memory");
 	generateChart("disk");
+	generateChart("network");
 }
 
 var generateChart=function(name){
@@ -10,8 +11,8 @@ var generateChart=function(name){
 			labels : [],
 			datasets : [ {
 				label : "CPU",
-				fillColor : "rgba(220,220,220,0.2)",
-				strokeColor : "rgba(220,220,220,1)",
+				fillColor : "rgba(220,220,248,0.2)",
+				strokeColor : "rgba(0,0,220,0.6)",
 				pointColor : "rgba(220,220,220,1)",
 				pointStrokeColor : "#fff",
 				pointHighlightFill : "#fff",
