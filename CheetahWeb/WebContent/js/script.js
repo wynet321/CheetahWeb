@@ -29,14 +29,13 @@ var generateChart=function(name){
 			scaleShowGridLines : false,
 			scaleBeginAtZero : true
 		});
-
 		var timer = window.setInterval("updateChart('"+name+"')", 2000);
 		cheetahChart[name]={"axisX":0,"line":line,"timer":timer};
 }
 
 var updateChart = function(name) {
 	var xhr = getXHR();
-	xhr.open("GET", "/CheetahWeb/servlet/getData", true);
+	xhr.open("GET", "/servlet/getData", true);
 	xhr.setRequestHeader("If-Modified-Since", "0");
 	xhr.send();
 	xhr.onreadystatechange = function() {
